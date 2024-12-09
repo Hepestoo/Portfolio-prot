@@ -7,6 +7,9 @@ import { Entregable1Component } from './entregas/entregable1/entregable1.compone
 import { Entregable2Component } from './entregas/entregable2/entregable2.component';
 import { Entregable3Component } from './entregas/entregable3/entregable3.component';
 import { HomeComponent } from './home/home.component';
+import { Entregable4Component } from './entregas/entregable4/entregable4.component';
+import { ButtonModule } from 'primeng/button';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +17,14 @@ import { HomeComponent } from './home/home.component';
     Entregable1Component,
     Entregable2Component,
     Entregable3Component,
-    HomeComponent
+    HomeComponent,
+    Entregable4Component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ButtonModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

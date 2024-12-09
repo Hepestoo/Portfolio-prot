@@ -4,12 +4,14 @@ import { Entregable1Component } from './entregas/entregable1/entregable1.compone
 import { Entregable2Component } from './entregas/entregable2/entregable2.component';
 import { Entregable3Component } from './entregas/entregable3/entregable3.component';
 import { HomeComponent } from './home/home.component';
+import { Entregable4Component } from './entregas/entregable4/entregable4.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'entregable1', component: Entregable1Component },
   { path: 'entregable2', component: Entregable2Component },
   { path: 'entregable3', component: Entregable3Component },
+  { path: 'entregable4', component: Entregable4Component },
   { path: '**', redirectTo: '' }
 ];
 

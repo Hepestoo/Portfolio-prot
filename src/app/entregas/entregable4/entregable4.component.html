@@ -1,0 +1,79 @@
+<h1>Botones</h1>
+
+<p-button label="Link" [link]="true" />
+<a href="https://angular.dev/" target="_blank" rel="noopener noreferrer" class="p-button font-bold">
+    External
+</a>
+<a routerLink="/" class="p-button font-bold">
+    Router
+</a>
+<p-button icon="pi pi-check" />
+<p-button label="Submit" icon="pi pi-check" />
+<p-button label="Submit" icon="pi pi-check" iconPos="right" />
+
+
+<p-button label="Primary" [raised]="true" />
+<p-button label="Secondary" [raised]="true" severity="secondary" />
+<p-button label="Success" [raised]="true" severity="success" />
+<p-button label="Info" [raised]="true" severity="info" />
+<p-button label="Warning" [raised]="true" severity="warning" />
+<p-button label="Help" [raised]="true" severity="help" />
+<p-button label="Danger" [raised]="true" severity="danger" />
+<p-button label="Contrast" [raised]="true" severity="contrast" />
+
+<p-button label="Primary" [outlined]="true" />
+<p-button label="Secondary" [outlined]="true" severity="secondary" />
+<p-button label="Success" [outlined]="true" severity="success" />
+<p-button label="Info" [outlined]="true" severity="info" />
+<p-button label="Warning" [outlined]="true" severity="warning" />
+<p-button label="Help" [outlined]="true" severity="help" />
+<p-button label="Danger" [outlined]="true" severity="danger" />
+<p-button label="Contrast" [outlined]="true" severity="contrast" />
+
+<p-button label="Primary" [rounded]="true" />
+<p-button label="Secondary" [rounded]="true" severity="secondary" />
+<p-button label="Success" [rounded]="true" severity="success" />
+<p-button label="Info" [rounded]="true" severity="info" />
+<p-button label="Warning" [rounded]="true" severity="warning" />
+<p-button label="Help" [rounded]="true" severity="help" />
+<p-button label="Danger" [rounded]="true" severity="danger" />
+<p-button label="Contrast" [rounded]="true" severity="contrast" />
+
+<h2>Form</h2>
+
+<form [formGroup]="profileForm">
+    <div>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name"  formControlName="firstName" required>
+    </div>
+
+    <div>
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" formControlName="email" required>
+    </div>
+
+    <div>
+        <label for="gender">Género:</label>
+        <select id="gender" name="gender" formControlName="gender">
+            <option value="male">Masculino</option>
+            <option value="female">Femenino</option>
+            <option value="other">Otro</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" rows="4" formControlName="message" required></textarea>
+    </div>
+
+    <div>
+        <label for="agree">
+            <input type="checkbox" id="agree" name="agree" required>
+            Acepto los términos y condiciones
+        </label>
+    </div>
+
+    <div>
+        <button type="submit">Enviar</button>
+    </div>
+</form>
