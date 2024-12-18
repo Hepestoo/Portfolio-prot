@@ -6,7 +6,6 @@ import { Entregable3Component } from './entregas/entregable3/entregable3.compone
 import { HomeComponent } from './home/home.component';
 import { Entregable4Component } from './entregas/entregable4/entregable4.component';
 import { Entregable5Component } from './entregas/entregable5/entregable5.component';
-import { ExamenComponent } from './examen/examen.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -15,7 +14,7 @@ const routes: Routes = [
   { path: 'entregable3', component: Entregable3Component },
   { path: 'entregable4', component: Entregable4Component },
   { path: 'entregable5', component: Entregable5Component },
-  { path: 'examen', component: ExamenComponent },
+  // { path: 'examen', component: ExamenComponent },
   { path: '**', redirectTo: '' }
 ];
 

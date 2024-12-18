@@ -13,7 +13,6 @@ import { Entregable5Component } from './entregas/entregable5/entregable5.compone
 import { CarouselModule } from 'primeng/carousel'; // Importación correcta
 import { TagModule } from 'primeng/tag';   
 import { CommonModule } from '@angular/common';
-import { ExamenComponent } from './examen/examen.component';   
 
 @NgModule({
   declarations: [
@@ -24,7 +23,6 @@ import { ExamenComponent } from './examen/examen.component';
     HomeComponent,
     Entregable4Component,
     Entregable5Component,
-    ExamenComponent
   ],
   imports: [
     BrowserModule,
